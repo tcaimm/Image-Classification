@@ -151,7 +151,7 @@ The project includes several utility tools:
 │   ├── testers/            # Testing implementations
 │   └── utils/              # Utility functions
 ├── tools/                  # Data preparation tools
-└── simple_data/            # Example data
+└── data_example/            # Example data
 ```
 
 ## Examples
