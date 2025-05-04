@@ -15,7 +15,6 @@ This project provides a flexible PyTorch-based implementation for image classifi
 - Gradient accumulation for effective batch size control
 - Learning rate scheduler with warmup
 - Comprehensive logging and model checkpointing
--
 
 ## Installation
 
