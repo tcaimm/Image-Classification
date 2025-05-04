@@ -1,0 +1,9 @@
+dog_001.jpeg,dog
+dog_002.jpeg,dog
+dog_003.jpeg,dog
+cat_001.jpeg,cat
+cat_002.jpeg,cat
+cat_003.jpeg,cat
+bird_001.jpeg,bird
+bird_002.jpeg,bird
+bird_003.jpeg,bird
