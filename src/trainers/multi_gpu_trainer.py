@@ -112,7 +112,12 @@ def build_model_and_optimizer(args, gpu_id, num_train):
     Calculates correct total training steps with gradient accumulation.
     """
     # Model and loss
-    model = BasicModel(args.model_name, args.num_classes).to(gpu_id)
+    if args.syncBN:
+        model = BasicModel(args.model_name, args.num_classes)
+        model = nn.SyncBatchNorm.convert_sync_batchnorm(model).to(gpu_id)
+    else:
+        model = BasicModel(args.model_name, args.num_classes).to(gpu_id)
+
     model = DDP(model, device_ids=[gpu_id])
     criterion = nn.CrossEntropyLoss()
 

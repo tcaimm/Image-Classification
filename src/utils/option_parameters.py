@@ -14,7 +14,8 @@ def parse_args():
     parser.add_argument("--mean", type=float, nargs=3, default=[0.485, 0.456, 0.406], help="Mean for normalization (RGB)")
     parser.add_argument("--std", type=float, nargs=3, default=[0.229, 0.224, 0.225], help="Std for normalization (RGB)")
 
-    parser.add_argument("--model_name", type=str, required=True, help="store the image path.")
+    parser.add_argument("--model_name", type=str, required=True, help="model name.")
+    parser.add_argument("--syncBN", type=str, action="store_true", default=False, help="Whether to use synchronous BN")
     parser.add_argument("--num_classes", type=int, default=3, help="Number of classes in the dataset.")
     parser.add_argument("--num_workers", type=int, default=4, help="num_workers")
     parser.add_argument("--batch_size", type=int, default=256, help="Batch size for training.")

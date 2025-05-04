@@ -10,7 +10,7 @@ This project provides a flexible PyTorch-based implementation for image classifi
 
 - Multiple pre-trained model support (ResNet34, Swin_v2_b ...)
 - Flexible dataset loading from folder structure or text file definitions
-- Multi-GPU training support (single machine with multiple cards)
+- Multi-GPU training support (single machine with multiple GPU)
 - Sample Balance Strategy Distributed Upsampling
 - Gradient accumulation for effective batch size control
 - Learning rate scheduler with warmup
@@ -151,7 +151,7 @@ The project includes several utility tools:
 │   ├── testers/            # Testing implementations
 │   └── utils/              # Utility functions
 ├── tools/                  # Data preparation tools
-└── simple_data/            # Example data
+└── data_example/            # Example data
 ```
 
 ## Examples
