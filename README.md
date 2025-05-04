@@ -21,11 +21,11 @@ This project provides a flexible PyTorch-based implementation for image classifi
 
 ### 1. Install PyTorch
 
-Please install the appropriate version of PyTorch for your system (OS, CUDA version, etc.) by following the instructions on the official PyTorch website: https://pytorch.org/get-started/locally
+Please install the appropriate version of PyTorch for your system (OS, CUDA version, etc.) by following the instructions on the official PyTorch website: https://pytorch.org
 
-Example (for CUDA 12.4):
+Example (torch 2.6 for CUDA 12.4):
 ```bash
-pip install torch torchvision torchaudio -f https://download.pytorch.org/whl/cu124
+pip install torch==2.6.0 torchvision==0.21.0 torchaudio==2.6.0 -f https://download.pytorch.org/whl/cu124
 ```
 
 ### 2. Clone the repository and install the required dependencies:
@@ -62,7 +62,8 @@ Create a JSON file mapping class names to indices:
 {
     "class1": 0,
     "class2": 1,
-    ...
+    "class3": 3,
+    "..."
 }
 ```
 This JSON file can also be omitted
@@ -137,7 +138,6 @@ The project includes several utility tools:
 ## Project Structure
 
 ```
-.
 ├── scripts/                # Training and inference scripts
 │   ├── train.sh            # Single-GPU training
 │   ├── train_multi.sh      # Multi-GPU training
